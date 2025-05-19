@@ -6,7 +6,13 @@ import "./index.css";
 import { router } from "./router.tsx";
 import { registerSW } from "virtual:pwa-register";
 
-registerSW({ immediate: true });
+if ("serviceWorker" in navigator) {
+  registerSW({
+    onOfflineReady() {
+      console.log("offline ready");
+    },
+  });
+}
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
