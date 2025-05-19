@@ -1,0 +1,14 @@
+{
+  "trailingComma": "all",
+  "singleQuote": false,
+  "quoteProps": "consistent",
+  "arrowParens": "avoid",
+  "jsxBracketSameLine": false,
+  "endOfLine": "auto",
+  "printWidth": 80,
+  "plugins": ["@trivago/prettier-plugin-sort-imports"],
+  "importOrder": ["^react", "^@/shared/(.*)$", "^@/features/(.*)$", "^."],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "importOrderCaseInsensitive": true
+}
